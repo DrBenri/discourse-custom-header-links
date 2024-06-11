@@ -25,6 +25,9 @@
           href={{link.anchorAttributes.href}}
           target={{link.anchorAttributes.target}}
         >
+          {{#if link.iconLink}}
+            <img class="icon-link" src="{{link.iconLink}}">
+          {{/if}}
           {{link.linkText}}
         </a>
       </li>

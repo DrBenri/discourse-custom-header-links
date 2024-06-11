@@ -31,6 +31,9 @@ en:
               description: |
                 remove = hides the link when the title is expanded on topic pages
                 keep = keeps the link visible even when the title is visible on topic pages
+            icon_link:
+              label: Icon link
+              description: icon link to be displayed in the header, must be available link can access in the internet
             locale:
               label: Locale
               description: The locale in which the link should be displayed on. The link will be displayed on all locales if left blank.

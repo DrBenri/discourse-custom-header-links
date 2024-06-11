@@ -12,7 +12,7 @@ export default function migrate(settings) {
     const newLinks = [];
 
     oldSetting.split("|").forEach((link) => {
-      const [text, title, url, view, target, hideOnScroll, locale] = link
+      const [text, title, url, view, target, hideOnScroll, iconLink, locale] = link
         .split(",")
         .map((s) => s.trim());
 
@@ -46,6 +46,10 @@ export default function migrate(settings) {
 
         if (locale) {
           newLink.locale = locale;
+        }
+
+        if (iconLink) {
+          newLink.icon_link = iconLink;
         }
 
         newLinks.push(newLink);

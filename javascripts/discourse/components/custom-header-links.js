@@ -13,6 +13,7 @@ export default class CustomHeaderLinks extends Component {
       const linkHref = link.url;
       const target = link.target;
       const hideOnScroll = link.hide_on_scroll;
+      const iconLink = link.icon_link;
       const locale = link.locale;
       const device = link.view;
 
@@ -35,6 +36,7 @@ export default class CustomHeaderLinks extends Component {
         linkClass,
         anchorAttributes,
         linkText,
+        iconLink,
       });
 
       return result;

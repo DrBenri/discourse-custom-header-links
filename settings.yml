@@ -40,6 +40,11 @@ custom_header_links:
           - remove
           - keep
         default: keep
+      icon_link:
+        type: string
+        validations:
+          min_length: 1
+          max_length: 10000
       locale:
         type: string
 
