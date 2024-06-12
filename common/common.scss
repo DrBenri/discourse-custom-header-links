@@ -15,6 +15,7 @@
   display: inline-flex;
   align-items: center;
   margin-left: auto;
+  gap: 8px;
   @if $links_position == "left" {
     margin-left: 1em;
     &--hide-links {
@@ -24,9 +25,9 @@
 
   .headerLink {
     // Custom style for the header links
-    border: 1px solid #bdbdbd;
+    border: 2px solid #0088CC;
     border-radius: 100px;
-    padding: 8px 16px;
+    padding: 0 8px;
     display: flex;
     align-items: center;
 
@@ -42,9 +43,9 @@
     }
 
     .icon-link {
-      height: 32px;
+      height: 42px;
       width: 100%;
-      max-width: 84px;
+      max-width: 100px;
     }
   }
 
